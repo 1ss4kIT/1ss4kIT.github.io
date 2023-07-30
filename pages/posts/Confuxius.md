@@ -22,3 +22,4 @@ layout: post
 ​	参考奇安信红雨滴团队分析报告 https://ti.qianxin.com/uploads/2020/09/17/69da886eecc7087e9dac2d3ea4c66ba8.pdf
 
 ### 1、邮件结合钓鱼网站定向攻击
+​	没太多技术性的东西，但一些钓鱼的小技巧很有意思。
