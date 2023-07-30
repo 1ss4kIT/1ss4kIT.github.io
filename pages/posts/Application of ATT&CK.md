@@ -20,7 +20,7 @@ tags:
 
 **介绍：**该网站将各个 APT 组织公开报告中的攻击技术和使用的恶意软件，使用 ATT&CK 进行了归档。如下图所示：
 
-![1-Group](/Application of ATT&CK/1-Group.png)
+![1-Group](/ATT&CK/1-Group.png)
 
 
 
@@ -66,7 +66,7 @@ https://ossemproject.com/intro.html
 
 介绍：此存储库的目标是将MITRE ATT&CK与Osquery映射，用来查找企业威胁。代码文件中每个conf文件都是一个查询包，可以在osquery中使用。GitHub上项目代码见下图。
 
- ![2-Osquery](/Application of ATT&CK/2-Osquery.png)
+ ![2-Osquery](/ATT&CK/2-Osquery.png)
 
 
 
@@ -108,7 +108,7 @@ https://ossemproject.com/intro.html
 
 以上四种工具的对比及各自特点如下图所示：
 
-![3-tool_compare](/Application of ATT&CK/3-tool_compare.png)
+![3-tool_compare](/ATT&CK/3-tool_compare.png)
 
 还有其他收费的工具，如：Safebreach、AttackIQ的FireDrill或Verodin等。
 
@@ -184,4 +184,4 @@ cyble：Bahamut组织利用钓鱼网站分发Android APK，文章发表于2021�
 
 其中ATT&CK内容如下：
 
-![4-paper](/Application of ATT&CK/4-paper.png)
+![4-paper](/ATT&CK/4-paper.png)
