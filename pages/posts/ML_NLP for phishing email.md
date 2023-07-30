@@ -68,7 +68,7 @@ title: 恶意URL检测(十)应用ML和NLP的方法去检测钓鱼邮件
 
 ​	本文使用NLP去处理电子邮件的body特征，并且使用GCN作为深度学习算法去检测钓鱼邮件。最开始输入的邮件包含有很多不相关的信息，需要进行图的构建。整体的操作流程如下图所示：
 
- ![1-frame](/ML_NLP for phishing email/1-frame.png)
+ ![1-frame](/ML_NLP_phishing_email/1-frame.png)
 
 ### 3.1数据预处理
 
@@ -84,13 +84,13 @@ title: 恶意URL检测(十)应用ML和NLP的方法去检测钓鱼邮件
 
 (1) 邮件清理：清除掉邮件不相关的信息以及非英文的字符。伪代码语句如下图：
 
- ![2-process](/ML_NLP for phishing email/2-process.png)
+ ![2-process](/ML_NLP_phishing_email/2-process.png)
 
 (2) Tokenization：基于空格，将邮件划分为词。具体实现的时候使用到了split()函数。
 
 (3) 移除一些停词以及出现频率较低的词：使用NLTK的停词列表，并且出现次数<7次的词会被删除。伪代码如下：
 
- ![3-process2](/ML_NLP for phishing email/3-process2.png)
+ ![3-process2](/ML_NLP_phishing_email/3-process2.png)
 
 
 
@@ -100,7 +100,7 @@ title: 恶意URL检测(十)应用ML和NLP的方法去检测钓鱼邮件
 
 ​	无向图G = (V, E)，用到了邻接矩阵A来表示无向图，矩阵中的值是每个关系的权重。边的值为两个词节点的同时出现频率，其计算方式如下图：
 
- ![4-calculate](/ML_NLP for phishing email/4-calculate.png)
+ ![4-calculate](/ML_NLP_phishing_email/4-calculate.png)
 
 其中P(I,J) 表示I和J同时出现的概率；如果是词和邮件，就计算TF- IDF的值。
 
@@ -110,19 +110,19 @@ title: 恶意URL检测(十)应用ML和NLP的方法去检测钓鱼邮件
 
 ​	在将邻近节点的信息进行传输之前，会进行scaled或归一化。Scaled方式如下：
 
- ![5-scales](/ML_NLP for phishing email/5-scales.png)
+ ![5-scales](/ML_NLP_phishing_email/5-scales.png)
 
 ​	在GCN中，如果使用一个卷积神经网络层，那么节点只能从它的最邻近节点得到信息，因此需要更多的卷积层，并且需要的节点越多，需要的卷积层也就越多。[Kipf, 2017] 指出大多数都使用两到三层卷积层。
 
 ​	第一层计算如下：
 
- ![6-firstcalcu](/ML_NLP for phishing email/6-firstcalcu.png)
+ ![6-firstcalcu](/ML_NLP_phishing_email/6-firstcalcu.png)
 
 其中A～是scaled后的adjacency矩；X是A的identity矩；W是权重矩，可以用梯度下降去计算；p是激活函数。
 
 ​	其他层的计算如下：
 
- ![7-otherlayer](/ML_NLP for phishing email/7-otherlayer.png)
+ ![7-otherlayer](/ML_NLP_phishing_email/7-otherlayer.png)
 
 ​	得到的邮件的特征矩阵输入到神经网络中，随后神经网络的隐藏层灰进行学习，随后输出层会进行判断，判定一个邮件是否是钓鱼文件。
 
@@ -154,15 +154,15 @@ GCN层数：2层；
 
 ​	使用的评价指标有：FP、TN、FN、TP、准确率、感知度、回召率和FPR。在评价分类器的有效性时，两种常用的方法是holdout和k -fold交叉验证。本文这两种方法都使用了，在holdout划分时，训练集和测试集的占比分别为70%和30%。同时，还使用了3-folds交叉验证的方法，把数据集分为了三组，分类器训练了三次。3-folds交叉验证的方法结果如下：
 
- ![8-3foldvalidation](/ML_NLP for phishing email/8-3foldvalidation.png)
+ ![8-3foldvalidation](/ML_NLP_phishing_email/8-3foldvalidation.png)
 
 混淆矩阵的结果如下：
 
-![9-confusionmatrix](/ML_NLP for phishing email/9-confusionmatrix.png)
+![9-confusionmatrix](/ML_NLP_phishing_email/9-confusionmatrix.png)
 
-其他指标结果如下： ![10-othervalues](/ML_NLP for phishing email/10-othervalues.png)
+其他指标结果如下： ![10-othervalues](/ML_NLP_phishing_email/10-othervalues.png)
 
-同时，又将现有的结果与其他方法进行比较，结果如下图所示： ![11-othervalues](/ML_NLP for phishing email/11-othervalues.png)
+同时，又将现有的结果与其他方法进行比较，结果如下图所示： ![11-othervalues](/ML_NLP_phishing_email/11-othervalues.png)
 
 ​	虽然有一些方法看似性能更好，但是与他们相比，本文方法所使用到的数据更少，且没有手动特征选取阶段。
 
