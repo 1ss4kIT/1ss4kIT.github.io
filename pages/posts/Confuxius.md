@@ -47,7 +47,7 @@ There are many UAC bypass techniques that are not effective on Windows 10 becaus
 ```
 ​	本RAT使用了另一种机制Wow64DisableWow64FsRedirection API，来禁用上文提到的重定向操作。
 
-![1-Wow64](/Analysis of the APT organization Confuxius/1-Wow64.png)
+![1-Wow64](/Confuxius/1-Wow64.png)
 
 ​	根据函数的交叉引用定位到sub_14001B634，但是之后就不知道怎么分析了。参考文章给出之后修改注册表，但是没找到相应的代码在哪里，不知道是不是版本的原因。
 
@@ -76,6 +76,6 @@ There are many UAC bypass techniques that are not effective on Windows 10 becaus
 
 生成的木马功能设置如下图所示，build的时候，选择的patch为Patch-release，没有选Patch-StaminaMode-release (因为手误)。但是进度条一直卡在那里不懂，查看freebuf文章的评论，说是.net的版本需要为4.5.2，但是win10又没办法安装这个版本的....尝试安装一个win7的虚拟机，反正其他地方也要用到。
 
-![2-function.png](/Analysis of the APT organization Confuxius/2-function.png)
+![2-function.png](/Confuxius/2-function.png)
 
 
