@@ -507,7 +507,7 @@ libc6-amd64_2.23-0ubuntu3_i386.so ---> 0x39bb20
 
 one_gadget如下：
 
-![31](/Users/my/Desktop/bloging/堆利用三之off by one/31.png)
+![31](/chunk_offbyone/31.png)
 
 ```python
 main_arena = 0x7ffff7dd1af0
