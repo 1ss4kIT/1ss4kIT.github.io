@@ -32,3 +32,19 @@ layout: post
 ​	例如：Warzone RAT，使用了UAC绕过技术。关于[Confucius使用Waezone RAT的报告可以看这篇文章](https://socprime.com/blog/warzone-rat-malware-used-by-confucius-apt-in-targeted-attacks/)
 
 ​	样本下载地址：[GitHub - PWN-Hunter/WARZONE-RAT-1.71: WARZONE RAT 1.71 CRACKED by UNKNOWN-Remote Administration Trojan-RAT](https://github.com/PWN-Hunter/WARZONE-RAT-1.71)
+
+
+
+
+**bypass UAC**
+
+​	使用sdclt.exe。可参考[知乎上的教程](https://zhuanlan.zhihu.com/p/29325846)，[github上原作者](https://gist.github.com/netbiosX/54a305a05b979e13d5cdffeba5436bcc)2019年称，在最新的windows10上已经不能用了，自己在windows10上进行尝试发现确实不能成功。([无法执行.ps1参考该文章](https://blog.csdn.net/jinhaijing/article/details/85004126))
+
+​	接下来的分析操作参考[uptycs.com的这篇文章](https://www.uptycs.com/blog/warzone-rat-comes-with-uac-bypass-technique)，这种技术属于T1548.002，并且现在由于windows的系统设置，很多方法已经不能用了。具体原因是：
+
+```tex
+There are many UAC bypass techniques that are not effective on Windows 10 because of the default file system restrictions. A 32-bit application can’t access the native c:\windows\system32 directory because the operating system redirects the request to c:\windows\SysWOW64. Sdclt.exe and other UAC bypass binaries are (not???) 64-bit applications and are not available in the SysWOW64 directory.
+```
+
+
+
