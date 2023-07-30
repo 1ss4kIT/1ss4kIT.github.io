@@ -1,9 +1,10 @@
 ---
-categories: 威胁情报
-date: 2021-11-27 20:03:15
-layout: post
-tags: null
 title: 对APT组织Confucius的分析
+date: 2021-11-27 20:03:15
+updated: 2021-11-28
+categories: 威胁情报
+tags: null
+layout: post
 ---
 
 ​	溯源取证的课程已经结束了，但是自己单靠上课听讲并没有学到很多能够实际应用的知识，两次大作业也没有比较实际的产出，有点愧疚。正好近期有需要整理APT组织相关信息的任务，并且溯源课程也快要考试了，此处以实际的APT组织Confucius为例，进行一下系统的学习，希望能够提高自己在溯源取证方面的知识和能力。
