@@ -22,5 +22,7 @@ Modify `valaxy.config.ts` to custom your blog.
 
 我试试你能写中文吗！！！！
 
+我试试你能加载图片吗！！
+![upload successdul](/images/pasted-237.png)
 
 
