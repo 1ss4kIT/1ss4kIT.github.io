@@ -76,6 +76,6 @@ There are many UAC bypass techniques that are not effective on Windows 10 becaus
 
 生成的木马功能设置如下图所示，build的时候，选择的patch为Patch-release，没有选Patch-StaminaMode-release (因为手误)。但是进度条一直卡在那里不懂，查看freebuf文章的评论，说是.net的版本需要为4.5.2，但是win10又没办法安装这个版本的....尝试安装一个win7的虚拟机，反正其他地方也要用到。
 
-<img src="/Analysis of the APT organization Confuxius/2-function.png" alt="2-function" style="zoom:50%;" />
+![2-function.png](/Analysis of the APT organization Confuxius/2-function.png)
 
 
