@@ -23,3 +23,12 @@ layout: post
 
 ### 1、邮件结合钓鱼网站定向攻击
 ​	没太多技术性的东西，但一些钓鱼的小技巧很有意思。
+
+
+### 2、邮件木马附件定向攻击
+
+​	通常用恶意宏来下载和执行恶意文件。
+
+​	例如：Warzone RAT，使用了UAC绕过技术。关于[Confucius使用Waezone RAT的报告可以看这篇文章](https://socprime.com/blog/warzone-rat-malware-used-by-confucius-apt-in-targeted-attacks/)
+
+​	样本下载地址：[GitHub - PWN-Hunter/WARZONE-RAT-1.71: WARZONE RAT 1.71 CRACKED by UNKNOWN-Remote Administration Trojan-RAT](https://github.com/PWN-Hunter/WARZONE-RAT-1.71)
