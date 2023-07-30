@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>道阻且长 行则将至</title>
+        <link>https://valaxy.site/</link>
+        <description></description>
+        <lastBuildDate>Sun, 30 Jul 2023 15:27:52 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>道阻且长 行则将至</title>
+            <url>https://th.bing.com/th/id/R.4bef63c1ecd122e6d727d31d4b5d1a59?rik=Xb97ekWasTc6Ug&amp;pid=ImgRaw&amp;r=0</url>
+            <link>https://valaxy.site/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2023 © 1ss4k</copyright>
+        <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[钓鱼检测(二)PhishInPattern分析]]></title>
+            <link>https://valaxy.site/posts/PhishInPattern</link>
+            <guid>https://valaxy.site/posts/PhishInPattern</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>文章阅读</h2>
+<p>1、文章等级：2022年IMC (CCF-B)</p>
+<p>2、探索了超过5w个钓鱼网站，得出如下结论：</p>
+<ul>
+<li>外观模仿某一目标，但不一定和目标一模一样</li>
+<li>通常有多步操作</li>
+<li>有验证步骤</li>
+</ul>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[钓鱼检测(一)PhishIntention分析]]></title>
+            <link>https://valaxy.site/posts/PhishIntention</link>
+            <guid>https://valaxy.site/posts/PhishIntention</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://github.com/lindsey98/PhishIntention">项目代码地址</a></p>
+<h2>环境配置</h2>
+<p>使用colab；<br>
+[安装Detectron2](<a href="https://de">https://de</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[Ransomware analysis]]></title>
+            <link>https://valaxy.site/posts/Ransomware analysis</link>
+            <guid>https://valaxy.site/posts/Ransomware analysis</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>对某勒索软件进行分析，题目来源于<code>恶意软件</code>课程的大作业。</p>
+<p>包含两个文件，名称分别如下</p>
+<pre><code class="language-python">0a0d5d2d3c663c54a92cb11f7102eb39
+6b9dbf1988</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[ssh登陆失败的解决方法]]></title>
+            <link>https://valaxy.site/posts/Solution to SSH login failure</link>
+            <guid>https://valaxy.site/posts/Solution to SSH login failure</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>之前想设置ssh连接不断开，一通操作之后不能登陆了... 以下记录恢复过程。</p>
+<pre><code class="language-python">my@192:~$ --&gt; ssh -p22 root@(ip)
+ssh: connect to h</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[TPlink SR20远程代码执行漏洞]]></title>
+            <link>https://valaxy.site/posts/TPlinkSR20 rce</link>
+            <guid>https://valaxy.site/posts/TPlinkSR20 rce</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>漏洞公布时间：2019年3月26日</p>
+<h2>漏洞原理</h2>
+<p>参考 <a href="https://paper.seebug.org/879/#_5">https://paper.seebug.org/879/#_5</a></p>
+<h2>环境搭建</h2>
+<p>1、ubuntu 16.04</p>
+<p>2、Q</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用URL相关性分析的基于HTTP的APT恶意软件检测]]></title>
+            <link>https://valaxy.site/posts/URL APT attack HTTP</link>
+            <guid>https://valaxy.site/posts/URL APT attack HTTP</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>1.背景</h2>
+<h5>1.刊物/会议级别</h5>
+<p>2021年发表于Hindawi，是一个开源期刊，属于SCI 4区。2021年1月，wiley收购hindawi (见<a href="http://news.scie">http://news.scie</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[Word2Vec及其各种变形总结]]></title>
+            <link>https://valaxy.site/posts/Word2Vec and so on</link>
+            <guid>https://valaxy.site/posts/Word2Vec and so on</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>​	我在本科毕设阶段 (2020年末) 就接触到了Word2Vec等nlp模型，但当时并没有学习过机器学习、深度学习相关的知识，对于该模型及其变型Doc2Vec的理解都不够深刻。近期 (2023年)</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[水印大修]]></title>
+            <link>https://valaxy.site/posts/Zernike andJPEG</link>
+            <guid>https://valaxy.site/posts/Zernike andJPEG</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>记录下来过程，希望自己不再痛苦...🙏</p>
+<h2>Zernike旋转角度检测</h2>
+<p>1、图像截取</p>
+<p>​	经过实验，截取原来左上角的最好，所以还用原来的。</p>
+<p>2、重新实验</p>
+<pre><code class="language-matlab">0.1---</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[堆利用(三)之offbyone]]></title>
+            <link>https://valaxy.site/posts/chunk offbyone</link>
+            <guid>https://valaxy.site/posts/chunk offbyone</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本文主要记录阅读一些文章时的笔记及总结</p>
+<h2>一、Asis CTF 2016 b00ks wp (null off-by-one)【详】</h2>
+<p>文章地址 <a href="https://www.jianshu.c">https://www.jianshu.c</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[docker搭建sql注入环境]]></title>
+            <link>https://valaxy.site/posts/docker for sql enviorment</link>
+            <guid>https://valaxy.site/posts/docker for sql enviorment</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>毕设计划用docker实现各种环境的搭建，现在进行搭建记录。</p>
+<p>参考：DetGen的capture-150-insecureSQLwithXSS</p>
+<p>原本的 detlearsom/php 找不</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[堆利用(二)之unlink]]></title>
+            <link>https://valaxy.site/posts/heap overflow unlink</link>
+            <guid>https://valaxy.site/posts/heap overflow unlink</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>基础知识</h3>
+<p>连续free的堆块，会被合并，放入unsorted bin中。</p>
+<p>之前unlink的宏定义</p>
+<pre><code class="language-c">#define unlink(P, BK, FD) {
+
+ FD =</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[堆利用(一)之基础知识及uaf/double free]]></title>
+            <link>https://valaxy.site/posts/heap overflow</link>
+            <guid>https://valaxy.site/posts/heap overflow</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>基础知识</h3>
+<h4>内存分配的机制</h4>
+<p>1、通过brk和mmap实现malloc内存分配</p>
+<p><img src="https://valaxy.site/images/pasted-26.png" alt="upload successful"></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[报销单图片下载]]></title>
+            <link>https://valaxy.site/posts/reimbursement form images</link>
+            <guid>https://valaxy.site/posts/reimbursement form images</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>​	被安排协助财务小姐姐进行报销单自查，需要根据报销单号找到对应的发票图片。若在网站上操作需要每次手动输入报销单号，且每次查询需要等待数秒时间，故决定将图片下载批量到本地，本文记录实现过程。</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[struts2[s2-052]远程命令执行漏洞复现]]></title>
+            <link>https://valaxy.site/posts/struts2[s2-052]rce</link>
+            <guid>https://valaxy.site/posts/struts2[s2-052]rce</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>漏洞信息</h2>
+<p>编号：CVE-2017-9805</p>
+<h2>环境搭建</h2>
+<p>1、Windows 10(64位)</p>
+<p>2、tomcat9.0</p>
+<p>参考</p>
+<p>[安装配置 by荆棘云海](<a href="https://blog">https://blog</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[ubuntu16.04本地提权漏洞]]></title>
+            <link>https://valaxy.site/posts/ubuntu16-04Local Authorization Vulnerability</link>
+            <guid>https://valaxy.site/posts/ubuntu16-04Local Authorization Vulnerability</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>关于Linux提权</h2>
+<p>参考知识星球中HBT的文章，总结如下：</p>
+<ul>
+<li>信息搜集</li>
+</ul>
+<p>[unix-privesc-check](<a href="http://pentestmonkey.net/tools/audit">http://pentestmonkey.net/tools/audit</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[cve-2017-13089 wget栈溢出]]></title>
+            <link>https://valaxy.site/posts/wget stack overflow</link>
+            <guid>https://valaxy.site/posts/wget stack overflow</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>环境搭建</h2>
+<p>1、<strong>Ubuntu 16.04 64bit</strong></p>
+<p><img src="https://valaxy.site/images/pasted-275.png" alt="upload successful"></p>
+<p>2、<strong>wget .19.1</strong></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[ATT&CK应用情况]]></title>
+            <link>https://valaxy.site/posts/Application of ATT&amp;CK</link>
+            <guid>https://valaxy.site/posts/Application of ATT&amp;CK</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本文转自安全内参，原文链接 <a href="https://www.secrss.com/articles/34950">https://www.secrss.com/articles/34950</a></p>
+<p>经调研，ATT&amp;CK在国内实际应用较少，主要是在国外的应用，例如被集成到一些工具中。以下重点对</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意流量的自动特征生成算法]]></title>
+            <link>https://valaxy.site/posts/Automatic Feature Generation Algorithm for Malicious Traffic</link>
+            <guid>https://valaxy.site/posts/Automatic Feature Generation Algorithm for Malicious Traffic</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本文作者来自于：绿盟科技、清华大学、哈尔滨工业大学。本文发表于2020 IEEE 19th International Conference on Trust, Security and Pri</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[早期基于DGA的僵尸网络识别:将检测推向边缘]]></title>
+            <link>https://valaxy.site/posts/DGA edge</link>
+            <guid>https://valaxy.site/posts/DGA edge</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>文章等级及作者团队</h3>
+<p>​	文章全名 Early DGA-based botnet identification: pushing detection to the edges，发表期刊 clu</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用DNS序列定位APT攻击中受感染的主机]]></title>
+            <link>https://valaxy.site/posts/DNS APT compromised host</link>
+            <guid>https://valaxy.site/posts/DNS APT compromised host</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Introduction</h2>
+<p>1、列出了一些重大的经典的攻击</p>
+<ul>
+<li>Aurora</li>
+</ul>
+<p>参考 <a href="https://www.mcafee.com/blogs/other-blogs/mcafee-labs">https://www.mcafee.com/blogs/other-blogs/mcafee-labs</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[DVR登陆绕过漏洞]]></title>
+            <link>https://valaxy.site/posts/DVR login bypass vulnerability</link>
+            <guid>https://valaxy.site/posts/DVR login bypass vulnerability</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>漏洞信息</h2>
+<p>CVE-2018-9995</p>
+<h2>利用过程</h2>
+<p>语句 `curl &quot;http://&lt;dvr_host&gt;:<port>/device.rsp?opt=user&amp;cmd=list</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[excel表格数据处理]]></title>
+            <link>https://valaxy.site/posts/Excel Table Data Processing</link>
+            <guid>https://valaxy.site/posts/Excel Table Data Processing</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>0x00 前言</h3>
+<p>每天的工作是重复枯燥的复制粘贴表格信息，别人知道后骂我sb，痛定思痛我决定写一个程序来实现自动化复制粘贴工作。大致分析了一下有以下几个难点：</p>
+<p>1、数据是钉钉直播导出的，</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[基于机器学习的HTTPS流量的恶意DNS检测]]></title>
+            <link>https://valaxy.site/posts/HTTP DNS detection</link>
+            <guid>https://valaxy.site/posts/HTTP DNS detection</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>会议：2020 International Conference on Innovation and Intelligence for Informatics, Computing and Techn</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[HipoRank抽取式无监督长文本摘要]]></title>
+            <link>https://valaxy.site/posts/HipoRank abstract</link>
+            <guid>https://valaxy.site/posts/HipoRank abstract</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>项目地址：<a href="https://github.com/mirandrom/HipoRank">https://github.com/mirandrom/HipoRank</a></p>
+<p>本文使用一个简单的基于图的算法，将文本分为两个层次，分别是section和sentence，以发现句子间的丰</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[LSB信息隐藏]]></title>
+            <link>https://valaxy.site/posts/LSB data embedding</link>
+            <guid>https://valaxy.site/posts/LSB data embedding</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>文献参考</h2>
+<p><strong>一、抵御SPA分析、动态补偿的LSB算法</strong></p>
+<p>复杂。但提供了一种思路，可以去抵抗一下提取的内容。<br>
+<strong>二、直接位平面替换</strong></p>
+<p>1、图像4*4分块，计算灰度差值来决定替换最</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[基于LSTM模型的DNS隐蔽信道检测方法]]></title>
+            <link>https://valaxy.site/posts/LSTM DNS covert channel</link>
+            <guid>https://valaxy.site/posts/LSTM DNS covert channel</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本文发表于Computers &amp; Security，作者来自于北航、软件所、应急响应技术中心，发表时间2020年10月。</p>
+<h1>一、背景及目的</h1>
+<p>1、DNS(域名系统)作用是将域名转为IP地址。防</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(十)应用ML和NLP的方法去检测钓鱼邮件]]></title>
+            <link>https://valaxy.site/posts/ML_NLP for phishing email</link>
+            <guid>https://valaxy.site/posts/ML_NLP for phishing email</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>1.背景</h2>
+<h3>1.1刊物/会议级别</h3>
+<p>​	2021年7月发表于Computers &amp; Security ；刊物检索级别：SCI；影响因子2.849；</p>
+<p>中科院分区：工程技术 3区 计</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[基于机器学习的加密流量恶意软件检测的综合性能研究]]></title>
+            <link>https://valaxy.site/posts/Malicious Software Detection for Encrypted Traffic</link>
+            <guid>https://valaxy.site/posts/Malicious Software Detection for Encrypted Traffic</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>0x00 发表刊物</h3>
+<p>会议论文 2020 7th International Conference on Networking, Systems and Security (NSysS</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(一)]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_1</link>
+            <guid>https://valaxy.site/posts/Malicious URL_1</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>前言：毕设选择了这个题目，此文章来记录一下学习过程，希望自己能够设计出一个比较好的系统！</p>
+<h2>用机器学习玩转恶意URL检测</h2>
+<p>文章链接 <a href="https://www.freebuf.com/artic">https://www.freebuf.com/artic</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(二)用户角度SVM]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_2</link>
+            <guid>https://valaxy.site/posts/Malicious URL_2</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>一、机器学习实现恶意URL检测</h1>
+<p>文章3地址 <a href="https://coldwave96.github.io/2019/11/08/MaliciousURLs/">https://coldwave96.github.io/2019/11/08/MaliciousURLs/</a></p>
+<p>1、处理数据</p>
+<p>POST请求，UR</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(三)深度学习]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_3</link>
+            <guid>https://valaxy.site/posts/Malicious URL_3</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>此文是关于两篇文章的总结</p>
+<h2>一</h2>
+<p>第一篇：<a href="https://www.fireeye.com/blog/threat-research/2021/01/training-transforme">https://www.fireeye.com/blog/threat-research/2021/01/training-transforme</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(四)五篇机器学习文章]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_4</link>
+            <guid>https://valaxy.site/posts/Malicious URL_4</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>六、使用机器学习的恶意URL检测综述</h3>
+<p>文章标题：Malicious URL Detection using Machine Learning:A Survey，三位作者来自新加坡管理大学</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(五)又是五篇文章]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_5</link>
+            <guid>https://valaxy.site/posts/Malicious URL_5</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>十一、卷积神经网络的方法实现准确且快速的URL钓鱼检测</h2>
+<p>1、作者来自 西电、陕西省网络计算与安全技术重点实验室、西北工业大学、捷克斯托乔瓦理工大学、西里西亚理工大学。发表期刊是 Els</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(六)钓鱼检测]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_6</link>
+            <guid>https://valaxy.site/posts/Malicious URL_6</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>十六、PhishStack:钓鱼URL检测中堆叠泛化的评估</h2>
+<p>1、会议等级</p>
+<p>ICCIDS 2019，全称International Conference on Computational In</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(七)小记两篇]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_7</link>
+            <guid>https://valaxy.site/posts/Malicious URL_7</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>二十一、恶意URL检测的综合比较研究</h2>
+<p>原名：Malicious URL Detection: A Comparative Study</p>
+<p>1、会议ICAIS2021(第一个给我人生希望的会议)，</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[恶意URL检测(九)一些比较杂的文章]]></title>
+            <link>https://valaxy.site/posts/Malicious URL_9</link>
+            <guid>https://valaxy.site/posts/Malicious URL_9</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>二十四、训练Transformers</h2>
+<p>1、发表于火眼上的一篇文章，地址<a href="https://www.fireeye.com/blog/threat-research/2021/01/trainin">https://www.fireeye.com/blog/threat-research/2021/01/trainin</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[磁盘清理]]></title>
+            <link>https://valaxy.site/posts/Memory Cleanup</link>
+            <guid>https://valaxy.site/posts/Memory Cleanup</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>前言</h1>
+<p>前几天下载了iMovie，然后磁盘空间突然就快满了... 这里记录一下清除的过程，以备以后查阅使用。</p>
+<p>![upload successful](/images/pasted-2.png</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[扫雷破解]]></title>
+            <link>https://valaxy.site/posts/Minesweeping and cracking</link>
+            <guid>https://valaxy.site/posts/Minesweeping and cracking</guid>
+            <pubDate>Sun, 30 Jul 2023 15:26:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>0. 破解</h2>
+<p>Ollydbg的存储位置为 C:\Program Files (x86)。</p>
+<p>1、程序运行时输出flag</p>
+<p><a href="https://www.begin.re/hacking-mine">https://www.begin.re/hacking-mine</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[CVE-2014-6332复现]]></title>
+            <link>https://valaxy.site/posts/CVE-2014-6332</link>
+            <guid>https://valaxy.site/posts/CVE-2014-6332</guid>
+            <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>环境</h2>
+<h2>产生原因</h2>
+<p>处理 OLE(Object Linking and Embedding，对象链接与嵌入) 失败 [参考](<a href="https://www.broadcom.co">https://www.broadcom.co</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+        <item>
+            <title><![CDATA[对APT组织Confucius的分析]]></title>
+            <link>https://valaxy.site/posts/Confuxius</link>
+            <guid>https://valaxy.site/posts/Confuxius</guid>
+            <pubDate>Sun, 28 Nov 2021 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>溯源取证的课程已经结束了，但是自己单靠上课听讲并没有学到很多能够实际应用的知识，两次大作业也没有比较实际的产出，有点愧疚。正好近期有需要整理APT组织相关信息的任务，并且溯源课程也快要考试了，此处以</p>
+]]></content:encoded>
+            <author>i@valaxy.site (1ss4k)</author>
+        </item>
+    </channel>
+</rss>
