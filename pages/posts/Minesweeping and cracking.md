@@ -33,7 +33,7 @@ ecx =  (随机数 + 1) * 32，用于确定行的位置
 用XOR指令代替原来的OR指令，就能在放置炸弹的时候将0x8F变为0x8E。
 
 修改之后的程序运行初始就标记出了所有雷区的位置，如下图所示。
-![1-wirteflag](/Minesweeping and cracking/1-wirteflag.png)
+![1-wirteflag](/Minesweeping_and_cracking/1-wirteflag.png)
 
 
 文章还提到了一种破解的方法，即在输出时，将mine输出为flag。
@@ -66,18 +66,18 @@ Open the file from its location.
 
 关于如何找到内存地址`100579C`，也可以使用CE。[CE破解参考教程](https://www.52pojie.cn/thread-1031125-1-1.html)
 
-![2-CE](/Minesweeping and cracking/2-CE.png)
+![2-CE](/Minesweeping_and_cracking/2-CE.png)
 
 
 但是自己操作的时候发现不管是nop单个的一行还是nop一小段，都没有让时间停下来。
 
 重新在`100579C`处下写断点，发现如果此时计数器的值不是0，就不是停在刚才说的`0x1003830`，而是断在`0x1002FF5`，将其改为nop。
 
-![3-bp.png](/Minesweeping and cracking/3-bp.png)
+![3-bp.png](/Minesweeping_and_cracking/3-bp.png)
 
 时间停止在了1秒。可能因为最开始的从0到1秒和1秒之后的秒数增加不在同一个位置处理，那么合理推测，`0x1003830`处的INC是使得时间从0秒增加到1秒。将其也改为nop，此时时间就停在了0秒。
 
-![4-timestop](/Minesweeping and cracking/4-timestop.png)
+![4-timestop](/Minesweeping_and_cracking/4-timestop.png)
 
 
 3、点到雷不会结束游戏
@@ -86,11 +86,11 @@ Open the file from its location.
 
 此处是时间增加的代码。时间增加的条件为`dword_1005164`不为0，且当前时间 < 999。
 
-![5-0x1564](/Minesweeping and cracking/5-0x1564.jpg)
+![5-0x1564](/Minesweeping_and_cracking/5-0x1564.jpg)
 
 猜测`dword_1005164`用来记录游戏是否结束，若其值为0，则游戏结束。ollydbg调试验证，发现猜想是正确的。初始化后其值为0，用户点击之后游戏开始，值变为1，用户踩到雷区，值变为0。赋值语句如下图所示。[傻傻地直接将这句改为NOP，意料之中地失败了]
 
-![6-gameover](/Minesweeping and cracking/6-gameover.jpg)
+![6-gameover](/Minesweeping_and_cracking/6-gameover.jpg)
 
 
 
@@ -102,11 +102,11 @@ Open the file from its location.
 
 再往上，到了`sub_1001BC9`函数。游戏的状态与`dword_1005000`处的值有关。游戏未开始时其值为0x18，开始之后为0x01，踩到雷之后变为0x10。在该地址处插入写入断点，踩到雷后跳转到0x010034D6。
 
-![6-endchange](/Minesweeping and cracking/6-endchange.jpg)
+![6-endchange](/Minesweeping_and_cracking/6-endchange.jpg)
 
 将该段代码修改为NOP，踩到雷之后还能继续玩～
 
-![7-afterboom](/Minesweeping and cracking/7-afterboom.jpg)
+![7-afterboom](/Minesweeping_and_cracking/7-afterboom.jpg)
 
 ## 1. 自动玩游戏
 

